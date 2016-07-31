@@ -8,25 +8,21 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     color: #1E2835;
     background-color: #F8F8F8;
     font-size: 1.5em;
 }
-
 h1 {
     background-color: #9ABBFF;
     margin:  0 0 20px 0;
     padding: 20px;
     text-align: center;
 }
-
 #top-message {
     text-align: center;
     padding: 10px;
 }
-
 canvas {
     width: 800px;
     height: 600px;
@@ -44,5 +40,13 @@ canvas {
 
 <div id="main">
     <h1>Pictionary</h1>
+    <div id="top-message">
+        <div id="draw-display">Draw: <span class="draw-this"></span></div>
+        <div id="guess">
+            Make a guess: <input type="text">
+        </div>
+        <div id="guess-display"></div>
+        
+    </div>
     <canvas id="canvas"></canvas>
 </div>
